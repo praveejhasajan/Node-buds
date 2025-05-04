@@ -315,3 +315,44 @@
     display: block;
 }
 
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.document-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.document-table th, .document-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.document-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+.document-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.document-table tr:hover {
+    background-color: #ddd;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .document-table th, .document-table td {
+        padding: 6px;
+    }
+}
